@@ -1,0 +1,447 @@
+/* elements */
+
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    background-color: #DCD7C9;
+    color: #2C3639;
+    background-image: url("../images/pawprintBackgroundImage.jpg");
+    background-size: contain;
+}
+
+/* classes */
+
+.main-container {
+    padding: 0 2%;
+    max-height: 600px;
+    min-height: 50px;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu';
+    font-size: 3rem;
+    font-weight: bold;
+    white-space: normal;
+}
+
+.nav-item {
+    padding: 0 2px;
+}
+
+.nav-link {
+    font-size: 1rem;
+    font-family: 'Montserrat-Light';
+    white-space: nowrap;
+}
+
+.navbtn {
+    min-width: 125px;
+    max-height: 50px;
+    width: fit-content;
+}
+
+.Footer {
+    background-color: #2C3639;
+    padding: 1% 0;
+}
+
+.Footer a, .Footer p {
+    font-size: x-large;
+    font-weight: 900;
+    color: #DCD7C9;
+}
+
+/* classes > index.html */
+
+.top-captions {
+    padding-top: 2%;
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 3%;
+    font-weight: 900;
+}
+
+.top-captions dfn {
+    visibility: hidden;
+}
+
+.top--captions {
+    padding-left: 5%;
+    margin: auto;
+}
+
+.traitsimg  {
+    width: 439px;
+    height: 300px;
+    padding-top: 10px;
+}
+
+.traitsdiv {
+    text-align: center;
+    padding: 0 0 50px;
+}
+
+.traitsdiv .btn {
+    background: url("../images/grass.jpg");
+    background-color: black;
+    width: 439px;
+    color: white;
+    border: 1px solid #DCD7C9;
+}
+
+.traitsdiv .btn:hover {
+    background: none;
+    background-color: #2C3639;
+    border: 1px solid #2C3639;
+    color: #DCD7C9;
+}
+
+.top-captions img {
+    width: 80%;
+    max-height: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* ids common */
+
+/* back to top button */
+#button {
+    display: inline-block;
+    background-color: #535724;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 255px;
+    right: 15px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    text-decoration: none;
+  }
+  #button::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #DCD7C9;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #2C3639;
+  }
+  #button:active {
+    background-color: #535724;
+  }
+  #button.show {
+    opacity: 0.6;
+    visibility: visible;
+  }
+  
+
+#title {
+    background-color: #2C3639;
+    color: #fff;
+}
+
+#title a {
+    color: #DCD7C9;
+}
+
+#title .btn {
+    background-color: #2C3639;
+    border: 1px solid #DCD7C9;
+    color: #DCD7C9;
+}
+
+#title .btn:hover {
+    background-color: #DCD7C9;
+    border: 1px solid #2C3639;
+    color: #2C3639;
+}
+
+#cartButton {
+    position: relative;
+    padding: 10px 0 0 15px;
+}
+
+/* #cartButton {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    padding: 15px 26px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+} */
+
+/* #cartButton:hover {
+    background: red;
+} */
+
+#badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
+#Contact p, #Gallery #gallery-title, #Profile p {
+    font-weight: bolder;
+    font-size: larger;
+}
+
+#Profile, #Contact, #Gallery {
+    min-height: 620px;
+}
+
+/* ids > index.html */
+
+#corgi-stats {
+    padding: 50px 3%;
+}
+
+#corgi-stats th {
+    margin: auto;
+    text-align: center;
+}
+
+#corgi-stats td, #corgi-stats th{
+    margin: auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#corgi-stats table {
+    border-collapse: collapse;
+    border: 10px solid #2C3639;
+}
+
+#corgi-stats table tr td, #corgi-stats table tr th {
+    border: 2px solid #2C3639;
+}
+
+#corgi-stats h2, #Traits h2 {
+    font-weight: bolder;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration:underline;
+    font-size: xx-large;
+}
+
+#corgi-stats table {
+    font-size: x-large;
+}
+
+#Traits {
+    padding: 50px 3% 0 3%;
+}
+
+/* ids > Contact.html */
+
+#Contact {
+    padding: 0 100px 40px;
+}
+
+#Contact #contactMe {
+    padding-top: 20px;
+}
+
+#Contact .wrapper {
+    padding-top: 20px;
+}
+
+#Contact .title-img {
+    padding-left: 5%;
+    max-height: 577px;
+}
+
+#Contact .btn {
+    display: block;
+    margin: auto;
+    background-color: #2C3639;
+    border: 1px #2C3639 solid;
+    color: #DCD7C9;
+}
+
+#Contact .btn:hover {
+    background-color: #DCD7C9;
+    border: 1px solid #2C3639;
+    color: #2C3639;
+}
+
+#Contact .wrapper p {
+    font-size: small;
+    color: crimson;
+}
+
+/* ids > About Me.html */
+
+#Profile {
+    padding: 20px 100px;
+}
+
+#Profile h1 {
+    margin: auto;
+}
+
+#Profile .profile-text {
+    padding: 0 8% 5% 2%;
+}
+
+#Profile .title-img {
+    padding: 2% 0 1% 2%;
+}
+
+#Profile a {
+    font-size: xx-large;
+    display: inline;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-size: 29px;
+    color: #2C3639;
+}
+
+/* ids > Gallery.html */
+
+#Gallery {
+    padding: 20px 100px;
+}
+
+#Gallery img {
+    padding: 0 0 2% 0%;
+    max-height: 577px;
+}
+
+#Gallery .gallery-text {
+    padding: 0 8% 5% 2%;
+}
+
+/* chatbox css */
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.u-btn {
+    all: unset;
+    cursor: pointer;
+}
+
+.chatbox {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+    bottom: 0;
+    position: fixed;
+    right: 5em;
+    transform: translatey(23.5em);
+    transition: all 300ms ease;
+    width: 18.5em;
+}
+
+.chatbox--is-visible {
+    transform: translatey(0);
+}
+
+.chatbox__header {
+    background: #535724;
+    border-top-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.75em;
+    user-select: none;
+}
+
+.chatbox__header-cta-text {
+    color: #DCD7C9;
+    font-weight: 600;
+    font-size: 1.025rem;
+    padding-top: 3%;
+}
+
+.chatbox__header-cta-icon {
+    color: #DCD7C9;
+    margin-right: 0.75em;
+}
+
+.chatbox__header-cta-btn {
+    background: none;
+    border: none;
+    color: #DCD7C9;
+    padding: 0.5em;
+    transition: all 300ms ease;
+}
+
+.chatbox__header-cta-btn:hover {
+    color: #DCD7C9;
+}
+
+.chatbox__display {
+    background: #DCD7C9;
+    height: 20em;
+    overflow-y: auto;
+    max-width: 100%;
+    overflow-x: hidden;
+    padding: 0.75em;
+    padding-bottom: 25px;
+}
+
+.chatbox__display-chat {
+    background: #DCD7C9;
+    border-radius: 0.5em;
+    color: #2C3639;
+    font-weight: 300;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding: 0.75em;
+    text-align: justify;
+}
+
+.chatbox__form {
+    display: flex;
+    max-height: 50px;
+}
+
+.chatbox__form-input {
+    border: none;
+    color: #2C3639;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding: 1.25em 1em;
+    width: 100%;
+}
+
+.chatbox__form-input:required {
+    box-shadow: none;
+}
+
+.chatbox__form-submit {
+    background: #535724;
+    border: none;
+    color: #DCD7C9;
+    padding: 1em;
+}
+
+.botDisplay {
+    font-weight: bold;
+    max-width: 90%;
+    overflow-x: hidden;
+}
+
+.botMessage {
+    font-weight: bold;
+    max-width: 90%;
+    overflow-x: hidden;
+    color:blue;
+    margin-left: auto; 
+    margin-right: 0;
+    text-align: right;
+}
